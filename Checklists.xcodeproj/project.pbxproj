@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0CDDFFE31B2C433B00BB001E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDDFFE21B2C433B00BB001E /* AppDelegate.swift */; };
-		0CDDFFE51B2C433B00BB001E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDDFFE41B2C433B00BB001E /* ViewController.swift */; };
+		0CDDFFE51B2C433B00BB001E /* ChecklistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDDFFE41B2C433B00BB001E /* ChecklistViewController.swift */; };
 		0CDDFFE81B2C433B00BB001E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CDDFFE61B2C433B00BB001E /* Main.storyboard */; };
 		0CDDFFEA1B2C433B00BB001E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CDDFFE91B2C433B00BB001E /* Images.xcassets */; };
 		0CDDFFED1B2C433B00BB001E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CDDFFEB1B2C433B00BB001E /* LaunchScreen.xib */; };
@@ -29,7 +29,7 @@
 		0CDDFFDD1B2C433B00BB001E /* Checklists.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Checklists.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CDDFFE11B2C433B00BB001E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0CDDFFE21B2C433B00BB001E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0CDDFFE41B2C433B00BB001E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0CDDFFE41B2C433B00BB001E /* ChecklistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecklistViewController.swift; sourceTree = "<group>"; };
 		0CDDFFE71B2C433B00BB001E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0CDDFFE91B2C433B00BB001E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		0CDDFFEC1B2C433B00BB001E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -78,7 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				0CDDFFE21B2C433B00BB001E /* AppDelegate.swift */,
-				0CDDFFE41B2C433B00BB001E /* ViewController.swift */,
+				0CDDFFE41B2C433B00BB001E /* ChecklistViewController.swift */,
 				0CDDFFE61B2C433B00BB001E /* Main.storyboard */,
 				0CDDFFE91B2C433B00BB001E /* Images.xcassets */,
 				0CDDFFEB1B2C433B00BB001E /* LaunchScreen.xib */,
@@ -212,7 +212,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0CDDFFE51B2C433B00BB001E /* ViewController.swift in Sources */,
+				0CDDFFE51B2C433B00BB001E /* ChecklistViewController.swift in Sources */,
 				0CDDFFE31B2C433B00BB001E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -409,6 +409,7 @@
 				0CDDFFFE1B2C433B00BB001E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0CDDFFFF1B2C433B00BB001E /* Build configuration list for PBXNativeTarget "ChecklistsTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +418,7 @@
 				0CDD00011B2C433B00BB001E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
