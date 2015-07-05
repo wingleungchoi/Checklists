@@ -11,6 +11,7 @@ import UIKit
 protocol AddItemViewControllerDelegate: class {
     func addItemViewControllerDidCancel(controller: AddItemViewController)
     func addItemViewController(controller: AddItemViewController, didFinishAddingItem item: ChecklistItem)
+    func addItemViewController(controller: AddItemViewController, didFinishEditingItem item: ChecklistItem)
 }
 
 class AddItemViewController: UITableViewController, UITextFieldDelegate {
@@ -18,6 +19,7 @@ class AddItemViewController: UITableViewController, UITextFieldDelegate {
     @IBOutlet weak var doneBarButton: UIBarButtonItem!
     
     weak var delegate: AddItemViewControllerDelegate?
+    var itemToEdit: ChecklistItem?
     
     @IBAction func cancel() {
         println("i try to send addItemViewControllerDidCancel ")
@@ -27,12 +29,15 @@ class AddItemViewController: UITableViewController, UITextFieldDelegate {
     }
     
     @IBAction func done() {
+        if let item = itemToEdit {
+            item.text = textField.text
+            delegate?.addItemViewController(self, didFinishEditingItem: item)
+        } else {
         let item = ChecklistItem()
-        item.text = textField.text
-        item.checked = false
-        delegate?.addItemViewController(self, didFinishAddingItem: item)
-        //println("Contents of the text field: \(textField.text)")
-        //dismissViewControllerAnimated(true, completion: nil)
+            item.text = textField.text
+            item.checked = false
+            delegate?.addItemViewController(self, didFinishAddingItem: item)
+        }
     }
     
     override func tableView(tableView: UITableView,
@@ -51,5 +56,16 @@ class AddItemViewController: UITableViewController, UITextFieldDelegate {
         doneBarButton.enabled = (newText.length > 0)
         
         return true
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        tableView.rowHeight = 44
+        
+        if let item = itemToEdit {
+            title = "Edit Item"
+            textField.text = item.text
+            doneBarButton.enabled = true
+        }
     }
 }
