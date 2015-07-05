@@ -17,13 +17,22 @@ class AddItemViewController: UITableViewController, UITextFieldDelegate {
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var doneBarButton: UIBarButtonItem!
     
+    weak var delegate: AddItemViewControllerDelegate?
+    
     @IBAction func cancel() {
-        dismissViewControllerAnimated(true, completion: nil)
+        println("i try to send addItemViewControllerDidCancel ")
+        delegate?.addItemViewControllerDidCancel(self)
+         println("i tried to send addItemViewControllerDidCancel ")
+        //dismissViewControllerAnimated(true, completion: nil)
     }
     
     @IBAction func done() {
-        println("Contents of the text field: \(textField.text)")
-        dismissViewControllerAnimated(true, completion: nil)
+        let item = ChecklistItem()
+        item.text = textField.text
+        item.checked = false
+        delegate?.addItemViewController(self, didFinishAddingItem: item)
+        //println("Contents of the text field: \(textField.text)")
+        //dismissViewControllerAnimated(true, completion: nil)
     }
     
     override func tableView(tableView: UITableView,
