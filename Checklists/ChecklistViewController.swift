@@ -51,9 +51,7 @@ class ChecklistViewController: UITableViewController, ItemDetailViewControllerDe
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
     }
     
-    override func tableView(tableView: UITableView,
-        commitEditingStyle editingStyle: UITableViewCellEditingStyle,
-        forRowAtIndexPath indexPath: NSIndexPath) {
+    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
         // 1 
             checklist.items.removeAtIndex(indexPath.row)
             
