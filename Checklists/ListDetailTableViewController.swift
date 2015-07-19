@@ -18,6 +18,7 @@ class ListDetailTableViewController: UITableViewController, UITextFieldDelegate,
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var doneBarButton: UIBarButtonItem!
     @IBOutlet weak var iconImageView: UIImageView!
+    
     var iconName = "Folder"
     
     @IBAction func cancel() {

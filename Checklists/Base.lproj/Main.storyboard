@@ -150,7 +150,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="doneBarButton" destination="2XR-jC-bqB" id="ej4-eC-rku"/>
-                        <outlet property="iconImageView" destination="QnP-je-kmw" id="QzJ-3u-5I8"/>
+                        <outlet property="iconImageView" destination="QnP-je-kmw" id="hoS-65-ZiA"/>
                         <outlet property="textField" destination="Xfl-Vl-2Qp" id="8Ve-GD-dut"/>
                     </connections>
                 </tableViewController>
@@ -197,6 +197,58 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
+                            <tableViewSection id="0tr-8k-UfL">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="XVu-O3-OaT">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XVu-O3-OaT" id="ahC-qE-C1v">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="8K0-Nx-frf">
+                                                    <rect key="frame" x="528" y="6" width="51" height="31"/>
+                                                </switch>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Remind Me" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uPl-RY-cup">
+                                                    <rect key="frame" x="33" y="11" width="88" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="5Qg-Hb-PRM"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="8K0-Nx-frf" secondAttribute="trailing" constant="15" id="Pga-5o-LpT"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="uPl-RY-cup" secondAttribute="trailing" constant="440" id="ZlB-Ve-Q5r"/>
+                                                <constraint firstItem="uPl-RY-cup" firstAttribute="top" secondItem="ahC-qE-C1v" secondAttribute="topMargin" constant="-8" id="hSQ-vs-Z9c"/>
+                                                <constraint firstItem="8K0-Nx-frf" firstAttribute="top" secondItem="ahC-qE-C1v" secondAttribute="topMargin" constant="-2" id="zD8-JV-0vW"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="SEM-eK-ik3" detailTextLabel="2U2-Nz-drz" style="IBUITableViewCellStyleValue1" id="1Ui-LD-udM">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1Ui-LD-udM" id="UPe-Ci-Cdc">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Due Date" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="SEM-eK-ik3">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2U2-Nz-drz">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
                         </sections>
                         <connections>
                             <outlet property="dataSource" destination="eNp-h8-R4R" id="89g-zS-vBx"/>
@@ -217,6 +269,8 @@
                     </navigationItem>
                     <connections>
                         <outlet property="doneBarButton" destination="IAE-lu-MRn" id="h5Q-bE-NV5"/>
+                        <outlet property="dueDateLabel" destination="2U2-Nz-drz" id="NK4-G6-xq6"/>
+                        <outlet property="shouldRemindSwitch" destination="8K0-Nx-frf" id="XG4-1o-fLg"/>
                         <outlet property="textField" destination="dwM-B5-mPc" id="4Dx-MU-HY5"/>
                     </connections>
                 </tableViewController>

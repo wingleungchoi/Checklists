@@ -13,5 +13,98 @@
             stopOnStyle = "0">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Checklists/ListDetailTableViewController.swift"
+            timestampString = "458983702.508863"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "ListDetailTableViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Checklists.ListDetailTableViewController.iconImageView.getter : weak Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.UIImageView&gt;"
+                  moduleName = "Checklists"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/WLCHOI/learning_swift/myProjects/Checklists/Checklists/ListDetailTableViewController.swift"
+                  timestampString = "458983454.12106"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "18">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Checklists.ListDetailTableViewController.iconImageView.materializeForSet : weak Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.UIImageView&gt;"
+                  moduleName = "Checklists"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/WLCHOI/learning_swift/myProjects/Checklists/Checklists/ListDetailTableViewController.swift"
+                  timestampString = "458983454.121531"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "30">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Checklists.ListDetailTableViewController.init (Checklists.ListDetailTableViewController.Type)(style : C.UITableViewStyle) -&gt; Checklists.ListDetailTableViewController"
+                  moduleName = "Checklists"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/WLCHOI/learning_swift/myProjects/Checklists/Checklists/ListDetailTableViewController.swift"
+                  timestampString = "458983454.121722"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "139">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Checklists.ListDetailTableViewController.init (Checklists.ListDetailTableViewController.Type)(nibName : Swift.ImplicitlyUnwrappedOptional&lt;Swift.String&gt;, bundle : Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.NSBundle&gt;) -&gt; Swift.ImplicitlyUnwrappedOptional&lt;Checklists.ListDetailTableViewController&gt;"
+                  moduleName = "Checklists"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/WLCHOI/learning_swift/myProjects/Checklists/Checklists/ListDetailTableViewController.swift"
+                  timestampString = "458983454.122012"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "228">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Checklists.ListDetailTableViewController.init (Checklists.ListDetailTableViewController.Type)(coder : Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.NSCoder&gt;) -&gt; Swift.ImplicitlyUnwrappedOptional&lt;Checklists.ListDetailTableViewController&gt;"
+                  moduleName = "Checklists"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/WLCHOI/learning_swift/myProjects/Checklists/Checklists/ListDetailTableViewController.swift"
+                  timestampString = "458983454.122151"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "142">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>
