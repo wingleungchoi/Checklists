@@ -18,10 +18,13 @@ class Checklist: NSObject, NSCoding {
         iconName = aDecoder.decodeObjectForKey("IconName") as! String
         super.init()
     }
-    init(name: String){
+    init(name: String, iconName: String){
         self.name = name
-        iconName = "No Icon"
+        self.iconName = iconName
         super.init()
+    }
+    convenience init(name: String){
+        self.init(name: name, iconName: "No Icon")
     }
     func encodeWithCoder(aCoder: NSCoder) {
         aCoder.encodeObject(name, forKey: "Name")
