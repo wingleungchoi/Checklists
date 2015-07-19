@@ -205,23 +205,18 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="8K0-Nx-frf">
-                                                    <rect key="frame" x="528" y="6" width="51" height="31"/>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="8K0-Nx-frf">
+                                                    <rect key="frame" x="559" y="6" width="51" height="31"/>
                                                 </switch>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Remind Me" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uPl-RY-cup">
-                                                    <rect key="frame" x="33" y="11" width="88" height="21"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="40" id="5Qg-Hb-PRM"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Remind Me" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VuR-MN-miv">
+                                                    <rect key="frame" x="15" y="11" width="88" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="trailingMargin" secondItem="8K0-Nx-frf" secondAttribute="trailing" constant="15" id="Pga-5o-LpT"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="uPl-RY-cup" secondAttribute="trailing" constant="440" id="ZlB-Ve-Q5r"/>
-                                                <constraint firstItem="uPl-RY-cup" firstAttribute="top" secondItem="ahC-qE-C1v" secondAttribute="topMargin" constant="-8" id="hSQ-vs-Z9c"/>
                                                 <constraint firstItem="8K0-Nx-frf" firstAttribute="top" secondItem="ahC-qE-C1v" secondAttribute="topMargin" constant="-2" id="zD8-JV-0vW"/>
                                             </constraints>
                                         </tableViewCellContentView>
