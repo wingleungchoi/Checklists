@@ -84,6 +84,38 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
+                            <tableViewSection id="CmF-Aa-Lak">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="CI8-84-vCF">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="CI8-84-vCF" id="8Px-lZ-ush">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Icon" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fqQ-sT-qzO">
+                                                    <rect key="frame" x="8" y="14" width="257" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QnP-je-kmw">
+                                                    <rect key="frame" x="517" y="4" width="36" height="36"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="36" id="26P-iD-f78"/>
+                                                        <constraint firstAttribute="height" constant="36" id="2Xs-AX-SZE"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="QnP-je-kmw" secondAttribute="trailing" constant="14" id="ArE-L1-xQN"/>
+                                                <constraint firstItem="QnP-je-kmw" firstAttribute="top" secondItem="8Px-lZ-ush" secondAttribute="top" constant="4" id="suQ-Aj-Kru"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="o4I-47-VV6" kind="show" identifier="PickIcon" id="f4X-7g-cto"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
                         </sections>
                         <connections>
                             <outlet property="dataSource" destination="AsE-iC-ppS" id="5O6-PX-ANY"/>
@@ -104,6 +136,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="doneBarButton" destination="2XR-jC-bqB" id="ej4-eC-rku"/>
+                        <outlet property="iconImageView" destination="QnP-je-kmw" id="QzJ-3u-5I8"/>
                         <outlet property="textField" destination="Xfl-Vl-2Qp" id="8Ve-GD-dut"/>
                     </connections>
                 </tableViewController>
@@ -168,6 +201,41 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HMM-qG-48D" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1711" y="44"/>
+        </scene>
+        <!--Choose Icon-->
+        <scene sceneID="ndH-8N-mRN">
+            <objects>
+                <tableViewController title="Choose Icon" id="o4I-47-VV6" customClass="IconPickerViewController" customModule="Checklists" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Bqz-5c-bwW">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="IconCell" textLabel="rsV-tY-AFh" style="IBUITableViewCellStyleDefault" id="InX-d2-lWL">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="InX-d2-lWL" id="X1k-9X-S3F">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Icon" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="rsV-tY-AFh">
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="o4I-47-VV6" id="6nf-6Z-Jkq"/>
+                            <outlet property="delegate" destination="o4I-47-VV6" id="6Cp-EV-c0b"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2VI-93-b0T" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="863" y="1272"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="NYL-B2-30Q">

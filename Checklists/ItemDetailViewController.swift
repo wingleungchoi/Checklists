@@ -42,7 +42,11 @@ class ItemDetailViewController: UITableViewController, UITextFieldDelegate {
     
     override func tableView(tableView: UITableView,
         willSelectRowAtIndexPath indexPath: NSIndexPath) -> NSIndexPath? {
-            return nil
+            if indexPath.section == 1{
+                return indexPath
+            } else {
+                return nil
+            }
     }
     
     override func viewWillAppear(anitmated: Bool) {
@@ -67,5 +71,7 @@ class ItemDetailViewController: UITableViewController, UITextFieldDelegate {
             textField.text = item.text
             doneBarButton.enabled = true
         }
+        
     }
+    
 }
